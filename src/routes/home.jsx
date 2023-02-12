@@ -4,6 +4,7 @@ import branches from "../branches"
 import Slideshow from "../components/slideshow"
 import LocationBox from "../components/locationBox"
 import BranchBox from "../components/branchBox"
+import Footer from "../components/footer"
 
 import {
   Image,
@@ -36,11 +37,17 @@ function getBranch(branchId) {
 
 function Home({ viewSize }) {
   return (
-    <>
+    <Box
+      position={"fixed"}
+      top={"66px"}
+      height="calc(100% - 66px)"
+      style={{ overflowY: "scroll" }}
+    >
       {/* 슬라이드쇼 */}
       <Center>
         <Box
-          margin={"67px 0 10px 0"}
+          // margin={"67px 0 10px 0"}
+          margin={"0 0 10px 0"}
           width={viewSize.width < 1920 ? viewSize.width : "1920px"}
           // width={{ base: "100%", lg: "1440px" }}
           // w="100%"
@@ -156,6 +163,8 @@ function Home({ viewSize }) {
         </VStack>
       </Center>
 
+      <Footer viewSize={viewSize} />
+
       <style jsx="true">{`
         .link,
         .link:hover,
@@ -190,7 +199,7 @@ function Home({ viewSize }) {
           height: 100%;
         }
       `}</style>
-    </>
+    </Box>
   )
 }
 

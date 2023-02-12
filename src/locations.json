@@ -1,6 +1,12 @@
 [
-  { "location": "서울 대치지역", "branchIds": ["SsDc", "PlDc", "SsGmp"] },
-  { "location": "서울 서초지역", "branchIds": ["SsSc", "PlSc"] },
-  { "location": "서울 잠실지역", "branchIds": ["SsJs", "PlJs"] },
+  {
+    "location": "서울 대치지역",
+    "branchIds": ["SsDc", "PlDc", "SsGmp", "SsMs"]
+  },
+  {
+    "location": "강남 서초지역",
+    "branchIds": ["SsSc", "PlSc", "SsAkj", "PlAkj", "PlBb", "SsSci_sc"]
+  },
+  { "location": "서울 잠실지역", "branchIds": ["SsJs", "PlJs", "SsSci_js"] },
   { "location": "수도권 경기지역", "branchIds": ["PlPc", "PlSd"] }
 ]

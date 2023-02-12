@@ -7,6 +7,7 @@ import Home2 from "./routes/home2"
 import Branch from "./routes/branch"
 import Schedule from "./routes/schedule"
 import Presentation from "./routes/presentation"
+import GetSheet from "./getsheet"
 
 function App() {
   const [viewSize, setViewSize] = useState({
@@ -45,6 +46,11 @@ function App() {
         </Route>
         <Route path="*" element={<Home viewSize={viewSize} />} />
       </Route>
+
+      <Route
+        path={`${process.env.PUBLIC_URL}/g`}
+        element={<GetSheet viewSize={viewSize} />}
+      ></Route>
     </Routes>
   )
 }

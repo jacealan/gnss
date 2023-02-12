@@ -293,23 +293,22 @@
     "phone1": "02-595-4808",
     "scheduleTitle1": "23년 3월 중등 시간표",
     "scheduleMonth1": "3월",
-    "scheduleOpen1": "3월 1일 ~ 4월 30일",
-    "scheduleYears1": [
-      "중등부 연간 진도계획 예시",
-      "학년별, 반별 연간 진도과정 예시",
-      "중1 학년",
-      "중2 학년"
-    ],
+    "scheduleOpen1": "3월 1일 ~ 4월 11일",
+    "scheduleYears1": ["중1 학년", "중2 학년"],
 
     "presentationTitle0": "23년 3월 초등 설명회",
-    "presentationContents0": ["초등 교육과정 설명회 2", "초등 개강 설명회 1"],
+    "presentationContents0": [
+      "저학년 수학공부의 시작! 지금이 중요하다",
+      "상위 1%로 가는 장기학습 로드맵"
+    ],
+    "presentationBooking0": "https://docs.google.com/forms/d/e/1FAIpQLSe7vql_4WCd6TvgVIav1fen--C846n_fjbH9PBT-uYGsKV14w/viewform",
 
     "presentationTitle1": "23년 3월 중등 설명회",
     "presentationContents1": [
-      "중등 교육과정 설명회 3",
-      "중등 개강 설명회 2",
-      "중등 입시설명회 1"
+      "왜 고등 최상위권은 중학교때 결정되는가?",
+      "학교별 기출특징과 출제경향 및 만점공략 비법전수"
     ],
+    "presentationBooking1": "https://forms.gle/GdLBzWPdXFDYTQX3A",
 
     "blog": "https://blog.naver.com/gnpolya_sc"
   },
@@ -348,6 +347,7 @@
 
     "presentationTitle0": "23년 3월 초등 설명회",
     "presentationContents0": ["초등 교육과정 설명회 2", "초등 개강 설명회 1"],
+    "presentationBooking0": "",
 
     "presentationTitle1": "23년 3월 중등 설명회",
     "presentationContents1": [
@@ -355,6 +355,7 @@
       "중등 개강 설명회 2",
       "중등 입시설명회 1"
     ],
+    "presentationBooking1": "",
 
     "blog": "https://blog.naver.com/gnssap4808"
   },
@@ -582,5 +583,91 @@
     ],
 
     "blog": "https://blog.naver.com/gnssms"
+  },
+  {
+    "id": "SsSci_js",
+    "title": "개념상상 과학MasterAll",
+    "concept": "최고의 과목별 전문가가 수업하는 과학수업",
+    "brand": "개념상상",
+    "location": "잠실",
+    "year": "초•중등관",
+
+    "year0": "실험",
+    "phone0": "02-425-4808",
+    "scheduleTitle0": "23년 3월 실험수업 시간표",
+    "scheduleMonth0": "3월",
+    "scheduleOpen0": "3월 1일 ~ 4월 30일",
+    "scheduleYears0": ["수업 진행방식", "주요 수업별 커리큘럼", "수업시간표"],
+
+    "year1": "중고등",
+    "phone1": "02-425-4808",
+    "scheduleTitle1": "23년 3월 중고등 과학 시간표",
+    "scheduleMonth1": "3월",
+    "scheduleOpen1": "3월 1일 ~ 4월 30일",
+    "scheduleYears1": [
+      "중고등 과학 연계과정 예시",
+      "과정별 수업안내",
+      "중등마스터",
+      "통과마스터",
+      "물화생지1 마스터"
+    ],
+
+    "presentationTitle0": "23년 3월 과학 설명회",
+    "presentationContents0": [
+      "과학수업 커리큘럼 설명회 2",
+      "과학 개강 설명회 1"
+    ],
+
+    "presentationTitle1": "23년 3월 중등 설명회",
+    "presentationContents1": [
+      "중등 교육과정 설명회 3",
+      "중등 개강 설명회 2",
+      "중등 입시설명회 1"
+    ],
+
+    "blog": "https://blog.naver.com/gnsssci"
+  },
+  {
+    "id": "SsSci_sc",
+    "title": "개념상상 과학MasterAll",
+    "concept": "최고의 과목별 전문가가 수업하는 과학수업",
+    "brand": "개념상상",
+    "location": "서초",
+    "year": "초•중등관",
+
+    "year0": "실험",
+    "phone0": "02-558-2500",
+    "scheduleTitle0": "23년 3월 실험수업 시간표",
+    "scheduleMonth0": "3월",
+    "scheduleOpen0": "3월 1일 ~ 4월 30일",
+    "scheduleYears0": ["수업 진행방식", "주요 수업별 커리큘럼", "수업시간표"],
+
+    "year1": "중고등",
+    "phone1": "02-558-2500",
+    "scheduleTitle1": "23년 3월 중고등 과학 시간표",
+    "scheduleMonth1": "3월",
+    "scheduleOpen1": "3월 1일 ~ 4월 30일",
+    "scheduleYears1": [
+      "중고등 과학 연계과정 예시",
+      "과정별 수업안내",
+      "중등마스터",
+      "통과마스터",
+      "물화생지1 마스터"
+    ],
+
+    "presentationTitle0": "23년 3월 과학 설명회",
+    "presentationContents0": [
+      "과학수업 커리큘럼 설명회 2",
+      "과학 개강 설명회 1"
+    ],
+
+    "presentationTitle1": "23년 3월 중등 설명회",
+    "presentationContents1": [
+      "중등 교육과정 설명회 3",
+      "중등 개강 설명회 2",
+      "중등 입시설명회 1"
+    ],
+
+    "blog": "https://blog.naver.com/gnsssci"
   }
 ]

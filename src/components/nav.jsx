@@ -78,9 +78,11 @@ function Nav({ viewSize }) {
                 >
                   {branches.map((branch, index) => (
                     <MenuItem key={index}>
-                      <a href={branch.blog} target="_blank">
+                      {/* <a href={branch.blog} target="_blank"> */}
+                      {/* <Link to={`./#${branch.id}`}>{branch.title}</Link> */}
+                      <Link to={`${process.env.PUBLIC_URL}/#${branch.id}`}>
                         {branch.title}
-                      </a>
+                      </Link>
                     </MenuItem>
                   ))}
                 </MenuList>

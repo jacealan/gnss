@@ -26,7 +26,7 @@ function Layout({ viewSize }) {
       <Outlet />
       {/* </Center> */}
       {/* </Box> */}
-      <Footer viewSize={viewSize} />
+      {/* <Footer viewSize={viewSize} /> */}
       {/* <Banner /> */}
     </>
   )

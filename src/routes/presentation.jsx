@@ -18,7 +18,9 @@ import {
   Text,
   Link,
   Divider,
+  Button,
 } from "@chakra-ui/react"
+import { EditIcon, ExternalLinkIcon } from "@chakra-ui/icons"
 
 function Presentation({ viewSize }) {
   const { branchId, yearId } = useParams()
@@ -109,7 +111,7 @@ function Presentation({ viewSize }) {
               <Divider borderTop="solid 1px black" />
             </GridItem>
             <GridItem>
-              <Center fontSize="22px">
+              <Center fontSize="24px" fontWeight={600}>
                 {branch.brand} {branch.location}관 설명회
               </Center>
             </GridItem>
@@ -149,7 +151,9 @@ function Presentation({ viewSize }) {
             >
               {/* {title && <Box pb={2}>&#x25A0; {title}</Box>} */}
               <Image
-                src={`${process.env.PUBLIC_URL}/assets/presentation${
+                src={`${
+                  process.env.PUBLIC_URL
+                }/assets/presentations/presentation${
                   branch.id + yearId + index
                 }.png`}
                 w="100%"
@@ -163,15 +167,39 @@ function Presentation({ viewSize }) {
             </Box>
           ))}
 
+          {branch[`presentationBooking${yearId}`] !== "" && (
+            <a
+              href={branch[`presentationBooking${yearId}`]}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button
+                p={"30px 90px"}
+                borderRadius={50}
+                // bgColor="#fdd773"
+                fontSize={20}
+                variant={"outline"}
+              >
+                설명회 신청하기&nbsp;
+                <EditIcon />
+              </Button>
+            </a>
+          )}
+
           {/* Blog */}
           <a href={branch.blog} target="_blank" rel="noreferrer">
             <Box
-              margin="50px"
+              margin="50px 0 10px 0"
               padding={"5px 40px"}
               borderRadius={20}
-              bgColor={"lightgrey"}
+              border={`solid 2px ${theme.blue}`}
             >
-              {branch.brand} {branch.location}관 방문하기
+              <Flex alignItems={"center"}>
+                <Box>
+                  {branch.brand} {branch.location}관 방문하기&nbsp;
+                </Box>
+                <ExternalLinkIcon />
+              </Flex>
             </Box>
           </a>
 
@@ -188,6 +216,12 @@ function Presentation({ viewSize }) {
             fontSize={20}
             fontWeight={700}
           >
+            {/* <a href={branch.blog} target="_blank" rel="noreferrer">
+              <Box>
+                {branch.brand} {branch.location}관 방문하기&nbsp;
+                <ExternalLinkIcon />
+              </Box>
+            </a> */}
             <a href={`tel://${branch.phone}`}>
               {branch.brand} {branch.location}관{" "}
               {branch[`phone${yearId}`].replaceAll("-", ". ")}

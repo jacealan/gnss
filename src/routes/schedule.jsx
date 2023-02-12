@@ -19,6 +19,7 @@ import {
   Link,
   Divider,
 } from "@chakra-ui/react"
+import { EditIcon, ExternalLinkIcon } from "@chakra-ui/icons"
 
 function Schedule({ viewSize }) {
   const { branchId, yearId } = useParams()
@@ -109,7 +110,7 @@ function Schedule({ viewSize }) {
               <Divider borderTop="solid 1px black" />
             </GridItem>
             <GridItem>
-              <Center fontSize="22px">
+              <Center fontSize="24px" fontWeight={600}>
                 {branch.brand} {branch.location}관 수업
               </Center>
             </GridItem>
@@ -129,10 +130,14 @@ function Schedule({ viewSize }) {
                 lg: `20px ${space * 2}px 20px ${space * 2}px`,
               }}
             >
-              {title && <Box pb={2}>&#x25A0; {title}</Box>}
+              {title && (
+                <Box pb={2} fontSize={20} fontWeight={500}>
+                  &#x25A0; {title}
+                </Box>
+              )}
               <Image
                 // src={`url(${branchImages[`schedule${branch.id}${index}`]})`}
-                src={`${process.env.PUBLIC_URL}/assets/schedule${
+                src={`${process.env.PUBLIC_URL}/assets/schedules/schedule${
                   branch.id + yearId + index
                 }.png`}
                 w="100%"
@@ -148,12 +153,17 @@ function Schedule({ viewSize }) {
           {/* Blog */}
           <a href={branch.blog} target="_blank" rel="noreferrer">
             <Box
-              margin="50px"
+              margin="50px 0 10px 0"
               padding={"5px 40px"}
               borderRadius={20}
-              bgColor={"lightgrey"}
+              border={`solid 2px ${theme.green}`}
             >
-              {branch.brand} {branch.location}관 방문하기
+              <Flex alignItems={"center"}>
+                <Box>
+                  {branch.brand} {branch.location}관 방문하기&nbsp;
+                </Box>
+                <ExternalLinkIcon />
+              </Flex>
             </Box>
           </a>
 
