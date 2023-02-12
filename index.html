@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="textarea" size="140" rows="2" />
+  <textarea cols="30" rows="2" onkeyup="AutoGrowTextArea(this)" id="textarea1">
+    Mary had a little lamb,
+    its fleece was white as snow,
+    and everywhere that Mary went
+    the lamb was sure to go.</textarea>
+</body>
+<script>
+  function AutoGrowTextArea(textField)
+{
+      textField.style.height = 
+        (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+  // if (textField.clientHeight < textField.scrollHeight)
+  // {
+  //   textField.style.height = textField.scrollHeight + "px";
+  //   if (textField.clientHeight < textField.scrollHeight)
+  //   {
+  //     textField.style.height = 
+  //       (textField.scrollHeight * 2 - textField.clientHeight) + "px";
+  //   }
+  // }
+}
+</script>
+</html>
